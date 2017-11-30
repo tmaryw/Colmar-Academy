@@ -2,6 +2,7 @@
 html {
   font-family: Helvetica;
   font-size: 16px;
+  margin: 0;
 }
 
 body {
@@ -106,18 +107,21 @@ button {
 }
 
 /*style supporting section*/
-#practice{
+.info-section {
+  background-color: white;
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 2rem;
 }
 
-.main-practice {
+.main-info-left {
   padding: 2rem 1.5rem;
   border-right: 0.1rem solid brown;
   width: 60%;
-  height: auto;
 }
 
-#practice .main-practice img {
+ .main--image-container img {
   width: 100%;
   height: auto;
 }
@@ -129,24 +133,34 @@ button {
 
 .campus-info {
   display: flex;
-  width: 40%;
+  max-width: 40%;
   flex-direction: column;
+  max-height: 10.5rem;
 }
 
 .campus-info-item {
   display:flex;
+  border-bottom: 0.1rem solid brown;
+  min-height: 10.5rem;
+}
+
+.campus-info-image {
+  max-width: 35%;
+  height: auto;
+  margin: 1rem;
 }
 
 .campus-info img {
-  width: 35%;
+  width: 100%;
   height: auto;
-  padding: 1rem;
 }
 
 .campus-info-text {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
   max-width: 65%;
   padding: 0.25rem 0;
-  text-align: left;
 }
 
 
