@@ -1,1 +1,163 @@
 /*main styling*/
+html {
+  font-family: Helvetica;
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.5rem;
+}
+
+div {
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+
+/*style header section*/
+
+header {
+  display: flex;
+  height: 4rem;
+  background-color: white;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  height: 2rem;
+}
+
+header .bold {
+  font-style: bold;
+}
+
+header .gray {
+  color: gray;
+}
+
+header nav {
+  display: inline;
+  margin: 0 auto;
+  width: 100%;
+  text-align: right;
+}
+
+
+ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  padding-right: 1rem;
+  justify-content: center;
+  margin: 0;
+}
+
+/*style banner section*/
+#learn {
+  display: flex;
+  background-color: grey;
+  height: 39rem;
+  width: auto;
+  padding: 2rem 1.5rem;
+}
+
+#learn img {
+  width: 60%;
+  height: auto;
+  position: left;
+}
+
+#learn h1 {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+#learn .content {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-left: 1rem;
+  padding: 0.5rem 0.5rem 1rem 1rem;
+}
+/*style button*/
+button {
+  padding: 0.5rem 7rem;
+  border: 0.05rem solid black;
+  color: white;
+  background-color: black;
+  font-size: 1rem;
+
+}
+
+/*style supporting section*/
+#practice{
+  display: flex;
+}
+
+.main-practice {
+  padding: 2rem 1.5rem;
+  border-right: 0.1rem solid brown;
+  width: 60%;
+  height: auto;
+}
+
+#practice .main-practice img {
+  width: 100%;
+  height: auto;
+}
+
+#practice h1 {
+  line-height: 1.8rem;
+  padding: 2rem 0 1.5rem 0;
+}
+
+.campus-info {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+}
+
+.campus-info-item {
+  display:flex;
+}
+
+.campus-info img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.campus-info-text {
+  max-width: 65%;
+  padding: 0.25rem 0;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+/*style video link*/
+.thesis-section .video {
+  width: 60%;
+}
