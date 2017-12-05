@@ -138,25 +138,42 @@ a, p {
 
 .banner-text {
   display: flex;
+  flex-direction: column;
+  text-align: center;
   align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: left;
+  width: 75%;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.banner-text h1, h3 {
+.banner-text h1 {
+  line-height: 1.8rem;
+}
+
+.banner-text h1, p {
   margin-bottom: 2rem;
 }
 /*style button*/
-button {
-  padding: 0.5rem 7rem;
-  border: 0.05rem solid black;
-  color: white;
-  background-color: black;
-  font-size: 1rem;
 
+.start-button a {
+  display: block;
+  padding: 0.5rem 7rem;
+  background-color: darkgray;
+  color: white;
+  text-align: center;
+  max-width: 60%;
+  border-radius: 0.25rem;
+
+  font-size: 1.5rem;
+}
+
+a:hover {
+  color: midnightblue;
+  transition: color 450ms ease-in-out 450ms;
+}
+
+a:active {
+  background-color: seagreen;
 }
 
 /*style supporting section*/
@@ -278,10 +295,18 @@ button {
 }
 
 /*style video link*/
+.thesis-section {
+  display: flex;
+}
 .thesis-section h2 {
   text-align: center;
-  padding: 2rem auto;
+  padding: 2rem 0 .5rem 0;
 }
-.thesis-section .video {
+.video-container {
   width: 60%;
+  margin: 1.5rem;
+}
+
+.video-container video {
+  width: 100%;
 }
