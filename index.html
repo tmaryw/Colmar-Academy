@@ -62,7 +62,7 @@
           <img src="./resources/images/information-main.jpg">
         </div>
         <h2>It doesn't hurt to keep practicing</h2>
-          <p>"Big long latin quote."</p>
+          <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
           <p>Emanuel, senior Strategist at Hiring.com</p>
       </div> <!--closing div for main-practice-->
 <!--right column section of info section!-->
@@ -70,6 +70,9 @@
         <div class="campus-info-item">
           <div class="info-img-container desktop">
           <img src="./resources/images/information-orientation.jpg"/>
+          </div>
+          <div class="info-img-container mobile">
+            <img src="./resources/images/information-orientation-mobile.jpg"/>
           </div>
           <div class="info-text">
             <h3>Orientation Date</h3>
@@ -81,15 +84,21 @@
           <div class="info-img-container desktop">
             <img src="./resources/images/information-campus.jpg"/>
           </div>
+          <div class="info-img-container mobile">
+            <img src="./resources/images/information-campus-mobile.jpg">
+          </div>
           <div class="info-text">
             <h3>Our Campus</h3>
             <span>Find which campus is close by you</span>
             <a href="#">Read More</a>
           </div>
         </div>
-        <div class="campus-info-item">
+        <div class="campus-info-item" id="oliver">
           <div class="info-img-container desktop">
             <img src="./resources/images/information-guest-lecture.jpg"/>
+          </div>
+          <div class="info-img-container mobile">
+            <img src="./resources/images/information-guest-lecture-mobile.jpg"/>
           </div>
           <div class="info-text">
             <h3>Guest lecture</h3>
@@ -102,8 +111,9 @@
 
   <!--courses section-->
   <section class="courses-section">
+    <div class="cs-container">
     <h2>Start learning</h2>
-    <div class="cs-block">
+    <div class="cs-block desktop">
       <div class="cs-box">
         <div class="cs-img-box">
           <img src="./resources/images/course-software.jpg"/>
@@ -153,36 +163,68 @@
         <p>Analytics, Content Marketing, Mobile Marketing</p>
       </div>
     </div><!--end "cs-block" div-->
+  <!--mobile courses div-->
+    <div class="course-links-mobile">
+      <div class="cs-link-box">
+        <h3>Software Engineering</h3>
+      </div>
+      <div class="cs-link-box">
+        <h3>Computer Art</h3>
+      </div>
+      <div class="cs-link-box">
+        <h3>Design</h3>
+      </div>
+      <div class="cs-link-box">
+        <h3>Data</h3>
+      </div>
+      <div class="cs-link-box">
+        <h3>Business</h3>
+      </div>
+      <div class="cs-link-box">
+        <h3>Marketing</h3>
+      </div>
+    </div>
+    </div>
   </section>
 
   <!--thesis section-->
     <section class="thesis-section">
       <h2>Thesis Exhibit</h2>
+      <div class="thesis-container">
       <div class="video-container">
-        <video src="./resources/videos/thesis.mp4"></video>
-        <h4>Reimagine Urban</h4>
-          <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna looreet, efficitur color consequat, tristique ligula."<p>
+        <video src="./resources/videos/thesis.mp4" alt="thesis video" controls></video>
+        <h4 class="thesis-desktop-only">Reimagine Urban</h4>
+          <p class="thesis-desktop-only">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna looreet, efficitur color consequat, tristique ligula."<p>
         </div>
-      <div class="thesis-item">
-        <div class="thesis-image">
-          <img src="./resources/images/thesis-fisma.jpg"/>
+      <div class="thesis-right">
+        <div class="thesis-item" id="fisma">
+          <div class="thesis-img-container">
+            <img src="./resources/images/thesis-fisma.jpg"/>
+          </div>
+          <div class="thesis-text">
+            <h3>Fisma: Design and Prototype</h3>
+            <span>Designer showcase of new prototype product</span>
+          </div>
         </div>
-        <h4>Fisma: Design and Prototype</h4>
-          <p>Designer showcase of new prototype product</p>
+        <div class="thesis-item">
+          <div class="thesis-img-container">
+            <img src="./resources/images/thesis-now-and-then.jpg"/>
+          </div>
+          <div class="thesis-text">
+            <h3>Now and then</h3>
+            <span>Research study about New York</span>
+          </div>
+        </div>
       </div>
-      <div class="thesis-item">
-        <div class="thesis-image">
-          <img src="./resources/images/thesis-now-and-then.jpg"/>
-        </div>
-        <h4>Now and then</h4>
-          <p>Research study about New York</p>
-      </div>
+    </div>
     </section>
   <!--footer section-->
     <footer>
-      <p>©2016 Colmar Academy. All rights reserved.</p>
-      <span><a href="#"></a>Terms</span>
-      <span><a href="#"></a>Privacy</span>
+      <span>©2016 Colmar Academy. All rights reserved.</span>
+      <span id="links">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </span>
     </footer>
 
   </body>

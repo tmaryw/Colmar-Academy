@@ -40,6 +40,10 @@ a, p {
   text-decoration: none;
 }
 
+div {
+  display: block;
+}
+
 
 /*style header section*/
 
@@ -90,6 +94,7 @@ a, p {
 }
 
 @media only screen and (max-width: 640px) {
+
   .desktop-header {
     display: none;
   }
@@ -139,6 +144,7 @@ a, p {
 .banner-text {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   text-align: center;
   align-content: center;
   width: 75%;
@@ -153,29 +159,77 @@ a, p {
 .banner-text h1, p {
   margin-bottom: 2rem;
 }
+
 /*style button*/
 
-.start-button a {
-  display: block;
-  padding: 0.5rem 7rem;
-  background-color: darkgray;
-  color: white;
-  text-align: center;
-  max-width: 60%;
+.start-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 60%;
   border-radius: 0.25rem;
+  background-color: darkgrey;
+}
 
+.start-button a {
+  color: white;
   font-size: 1.5rem;
 }
 
-a:hover {
+.start-button a:hover {
   color: midnightblue;
-  transition: color 450ms ease-in-out 450ms;
+  transition: color 0 ease-in-out 0;
 }
 
-a:active {
+.start-button:active {
   background-color: seagreen;
 }
 
+@media only screen and (max-width: 760px) {
+  .banner-right {
+    padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .banner-container {
+    display: flex;
+    flex-direction: column;
+    margin: 4 0 0 0;
+    padding: 0;
+  }
+
+  .banner-left {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    width: 100%;
+  }
+
+  .banner-left img {
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+  }
+
+  .banner-right {
+    margin: 2rem 1rem 2rem 1rem;
+  }
+
+  .start-button {
+    display: flex;
+    width: 80%;
+  }
+}
 /*style supporting section*/
 
 .info-section {
@@ -217,6 +271,10 @@ a:active {
   padding: 1rem;
 }
 
+.mobile {
+  display: none;
+}
+
 .campus-info-item img {
   width: 100%;
   height: auto;
@@ -251,10 +309,57 @@ a:active {
   background-color: seagreen;
 }
 
+@media only screen and (max-width: 1024px) {
+  .mobile
+}
+
+@media only screen and (max-width: 640px) {
+  .main-info-left {
+    display: none;
+  }
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .campus-info {
+    display: block;
+    width: 100%;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .mobile {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+  }
+  .mobile img {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  .desktop {
+    display: none;
+  }
+  .campus-info-item {
+    border: none;
+  }
+  .info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
 /*courses section styling*/
 .courses-section {
   width: 100%;
   background-color: lightgray;
+}
+
+.course-links-mobile {
+  display: none;
 }
 
 .courses-section h2 {
@@ -294,19 +399,151 @@ a:active {
   padding: 0.5rem;
 }
 
+@media only screen and (max-width: 640px) {
+  .desktop {
+    display: none;
+  }
+
+  .cs-container {
+    width: 100%;
+    background-color: white;
+  }
+
+  .cs-container h2 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    border-top: 0.05rem solid lightgray;
+  }
+
+  .course-links-mobile {
+    display: block;
+    padding: 1rem auto 2rem 1rem;
+  }
+
+  .cs-link-box {
+    background-color: lightgray;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+
+  }
+
+  .cs-link-box h3 {
+    padding: 1rem 0 1.5rem 1rem;
+    margin: 0;
+  }
+
+}
+
 /*style video link*/
 .thesis-section {
-  display: flex;
+  background-color: white;
+  width: 100%;
+  border-bottom: 0.02rem solid lightgray;
 }
+
 .thesis-section h2 {
   text-align: center;
-  padding: 2rem 0 .5rem 0;
+  padding: 2rem 0 2rem 0;
 }
+
+.thesis-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .video-container {
   width: 60%;
-  margin: 1.5rem;
+  margin: 0 1.5rem 1.5rem 1.5rem;
 }
 
 .video-container video {
   width: 100%;
+}
+
+.thesis-right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.thesis-item {
+  display: flex;
+  flex-direction: row;
+}
+
+#fisma {
+  background-color: seagreen;
+}
+
+.thesis-img-container {
+  width: 35%;
+  padding: 1rem;
+}
+
+.thesis-item img {
+  width: 100%;
+  height: auto;
+}
+
+.thesis-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+
+.thesis-text h3 {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.thesis-text span {
+  padding: 0.5rem 0;
+}
+
+@media only screen and (max-width: 640px){
+  .thesis-right {
+    display: none;
+  }
+
+  .video-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .thesis-section h2 {
+    margin: 2rem auto 1rem auto;
+    border-top: 0.05rem solid lightgray;
+  }
+}
+
+
+/*footer section styling*/
+
+footer {
+  display: flex;
+  color: lightgray;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+
+}
+
+footer a {
+  transition: all 0 ease 0;
+}
+
+#links a:hover {
+  color: lightblue;
+}
+
+#links a:active {
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 640px){
+  #links {
+    display: none;
+  }
 }
