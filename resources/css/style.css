@@ -144,8 +144,9 @@ div {
 .banner-text {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   text-align: center;
+  align-items: center;
   align-content: center;
   width: 75%;
   margin-top: 2rem;
@@ -227,6 +228,7 @@ div {
 
   .start-button {
     display: flex;
+    flex-direction: row;
     width: 80%;
   }
 }
@@ -307,10 +309,6 @@ div {
 
  #oliver {
   background-color: seagreen;
-}
-
-@media only screen and (max-width: 1024px) {
-  .mobile
 }
 
 @media only screen and (max-width: 640px) {
@@ -399,7 +397,7 @@ div {
   padding: 0.5rem;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 720px) {
   .desktop {
     display: none;
   }
