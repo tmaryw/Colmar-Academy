@@ -90,6 +90,7 @@ div {
 
 .desktop-header a:active {
   color: #239CA2;
+  font-weight: bold;
 }
 
 .desktop-nav a {
@@ -191,11 +192,12 @@ div {
 
 .start-button a:hover {
   color: #57BDC2;
-  transition: color 0 ease-in-out 0;
+  transition: 350ms linear 100ms;
 }
 
 .start-button:active {
   background-color: #FF5435;
+  transition: 450ms linear 0;
 }
 
 @media only screen and (max-width: 760px) {
@@ -242,7 +244,7 @@ div {
     width: 80%;
   }
 }
-/*style supporting section*/
+/*style info section*/
 
 .info-section {
   background-color: white;
@@ -264,6 +266,8 @@ div {
   height: auto;
 }
 
+/*right-side of info section*/
+
 .campus-info {
   display: flex;
   width: 40%;
@@ -276,11 +280,11 @@ div {
   flex-direction: row; /*because text and image need to stand side-by-side*/
   width: 100%;
   border-bottom: 0.1rem solid #FFCD72;
-
 }
 
 .campus-info-item:hover {
   background-color: #7FD2D6;
+  transition: 450ms ease 100ms;
 }
 
 .info-img-container {
@@ -377,7 +381,6 @@ div {
   flex-flow: row wrap;
   justify-content: center;
   width: 100%;
-
 }
 
 .cs-box {
@@ -443,7 +446,7 @@ div {
 
 }
 
-/*style video link*/
+/*thesis/video section styling*/
 .thesis-section {
   background-color: white;
   width: 100%;
