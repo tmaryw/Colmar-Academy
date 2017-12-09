@@ -1,6 +1,5 @@
 /*main styling*/
 html {
-  font-family: Helvetica;
   font-size: 16px;
   margin: 0;
 }
@@ -36,8 +35,16 @@ h4 {
 a, p {
   font-size: 1rem;
   font-weight: 400;
-  color: black;
   text-decoration: none;
+}
+
+h1, h2, h3, a, p{
+  color: #11474D;
+  font-family: 'Montserrat', sans-serif;
+}
+
+span, h4 {
+  font-family: 'Lato', sans-serif;
 }
 
 div {
@@ -70,10 +77,6 @@ div {
 
 }
 
-.logo .gray {
-  color: gray;
-}
-
 .desktop-header nav {
   display: inline;
   margin: 0 auto;
@@ -85,6 +88,10 @@ div {
   margin-right: 1.5rem;
 }
 
+.desktop-header a:active {
+  color: #239CA2;
+}
+
 .desktop-nav a {
   margin-left: 1rem;
 }
@@ -93,7 +100,7 @@ div {
   display: none;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 680px) {
 
   .desktop-header {
     display: none;
@@ -119,7 +126,7 @@ div {
 /*style banner section*/
 .banner-container {
   display: flex;
-  background-color: grey;
+  background-color: lightgrey;
   flex-direction: row;
   width: 100%;
   margin-top: 4rem;
@@ -137,8 +144,10 @@ div {
 }
 
 .banner-right {
+  display: flex;
   flex-basis: 40%;
-  padding-top: 2rem;
+  justify-content: center;
+  align-content: center;
 }
 
 .banner-text {
@@ -151,6 +160,7 @@ div {
   width: 75%;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  color: #11474D;
 }
 
 .banner-text h1 {
@@ -171,7 +181,7 @@ div {
   padding-bottom: 0.5rem;
   width: 60%;
   border-radius: 0.25rem;
-  background-color: darkgrey;
+  background-color: #798081;
 }
 
 .start-button a {
@@ -180,12 +190,12 @@ div {
 }
 
 .start-button a:hover {
-  color: midnightblue;
+  color: #57BDC2;
   transition: color 0 ease-in-out 0;
 }
 
 .start-button:active {
-  background-color: seagreen;
+  background-color: #FF5435;
 }
 
 @media only screen and (max-width: 760px) {
@@ -194,7 +204,7 @@ div {
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 700px) {
   .banner-container {
     display: flex;
     flex-direction: column;
@@ -240,11 +250,12 @@ div {
   flex-direction: row;
   width: 100%;
   padding-bottom: 2rem;
+  color: gray;
 }
 
 .main-info-left {
   padding: 2rem 1.5rem;
-  border-right: 0.1rem solid brown;
+  border-right: 0.1rem solid #FFCD72;
   width: 60%;
 }
 
@@ -264,8 +275,12 @@ div {
   display: flex;
   flex-direction: row; /*because text and image need to stand side-by-side*/
   width: 100%;
-  border-bottom: 0.1rem solid brown;
+  border-bottom: 0.1rem solid #FFCD72;
 
+}
+
+.campus-info-item:hover {
+  background-color: #7FD2D6;
 }
 
 .info-img-container {
@@ -301,14 +316,6 @@ div {
 
 .info-text span {
   padding: 0.5rem 0;
-}
-
-.info-text a {
-  color: blue;
-}
-
- #oliver {
-  background-color: seagreen;
 }
 
 @media only screen and (max-width: 640px) {
@@ -393,6 +400,9 @@ div {
   height: auto;
 }
 
+.cs-box span {
+  color: #06939A;
+}
 .cs-box h3, span, p {
   padding: 0.5rem;
 }
@@ -440,7 +450,7 @@ div {
   border-bottom: 0.02rem solid lightgray;
 }
 
-.thesis-section h2 {
+.thesis-section h1 {
   text-align: center;
   padding: 2rem 0 2rem 0;
 }
@@ -470,8 +480,12 @@ div {
   flex-direction: row;
 }
 
+.thesis-item:hover {
+  background-color: #7FD2D6;
+}
+
 #fisma {
-  background-color: seagreen;
+  background-color: #FFDA97;
 }
 
 .thesis-img-container {
@@ -499,9 +513,10 @@ div {
 
 .thesis-text span {
   padding: 0.5rem 0;
+  color: #06939A;
 }
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width:720px){
   .thesis-right {
     display: none;
   }
